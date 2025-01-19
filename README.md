@@ -15,9 +15,9 @@ This project aims to provide a functional note-taking application accessible eve
 
 ## Technologies Used
 
-*   PHP
+*   PHP 8.3 and above
 *   CodeIgniter 4
-*   MySQL
+*   SQLite
 *   HTML
 *   Minimal CSS
 
@@ -47,15 +47,6 @@ This project aims to provide a functional note-taking application accessible eve
     cp .env.example .env
     ```
 
-    Edit the `.env` file and set the following database credentials:
-
-    ```
-    database.default.hostname = your_db_host
-    database.default.database = your_db_name
-    database.default.username = your_db_user
-    database.default.password = your_db_password
-    ```
-
 5.  **Run database migrations:**
 
     ```bash
@@ -81,7 +72,14 @@ The application includes very basic authentication for demonstration. The defaul
 
 ## Deployment
 
-For deployment to a production server, consult the CodeIgniter 4 documentation for deployment instructions.
+1.  **Removing Dev Packages:**
+
+    ```bash
+    composer install --no-dev
+    ```
+2. **Upload to shared host**
+
+Consult the CodeIgniter 4 documentation for further deployment details.
 
 ## Compatibility
 
